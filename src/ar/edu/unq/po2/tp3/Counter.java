@@ -3,6 +3,8 @@ package ar.edu.unq.po2.tp3;
 import java.util.ArrayList;
 
 public class Counter {
+	
+	public int defaultInt;
 
 	ArrayList<Integer> numbers = new ArrayList<Integer>();
 
@@ -114,3 +116,42 @@ public class Counter {
 		}
 	}
 }
+
+//
+//4. Examinar las expresiones
+
+//Dado el siguiente código:
+//String a = "abc";
+//String s = a;
+//String t;
+
+//Indique que valores retornan las siguientes expresiones o, si dan error, por qué se producen:
+//● s.length(); ---> 3
+//● t.length(); ---> 3
+//● 1 + a; ---> "1abc"
+//● a.toUpperCase(); ---> "ABC"
+//● "Libertad".indexOf("r"); ---> 4
+//● "Universidad".lastIndexOf('i'); ---> 7
+//● "Quilmes".substring(2,4); ---> "ilm"
+//● (a.length() + a).startsWith("a"); ---> False (la primer parte de la expresión devuelve "3abc", que evidentemente no empieza on "a")
+//● s == a; ---> True
+//● a.substring(1,3).equals("bc") ---> True
+
+
+//5. Tipos primitivos
+
+//Teniendo en cuenta la documentación oficial de Java:
+//1. ¿Qué son los tipos de datos primitivos?
+// Es un tipo de dato que ya viene predefinido con el lenguaje.
+//
+//2. ¿Cuál es la diferencia entre un int y un Integer?
+//En primer lugar int es un tipo de dato primitivo e Integer es una clase. 
+// Además, un objeto Integer ocupa 16 bytes de memoria, por lo que es mas lento que  un int que solo ocupa 4 bytes.
+//
+//3. ¿Si se define una variable de instancia de tipo int cual sería su valor predeterminado? ¿Y si se
+//define una de tipo Integer? Haga la prueba en Eclipse.
+// El valor predeterminado de un int es 0 y el de un Integer
+//
+//4. Responder la pregunta del punto anterior (3), pero ahora en lugar de definir una variable de
+//instancia se define una variable de método.
+//
