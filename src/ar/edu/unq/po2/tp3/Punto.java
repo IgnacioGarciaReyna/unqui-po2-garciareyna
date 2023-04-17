@@ -4,12 +4,12 @@ public class Punto {
 	private int x;
 	private int y;
 
-	Punto() {
+	public Punto() {
 		this.setX(0);
 		this.setY(0);
 	}
 
-	Punto(int x, int y) {
+	public Punto(int x, int y) {
 		this.setX(x);
 		this.setY(y);
 	}

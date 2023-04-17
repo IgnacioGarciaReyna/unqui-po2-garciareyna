@@ -3,19 +3,25 @@ package ar.edu.unq.po2.tp3;
 public class Rectangulo {
 	private int alto;
 	private int ancho;
-	private Punto puntoDeInicio;
+	protected Punto puntoDeInicio;
+	
+	public Rectangulo() {
+		this.puntoDeInicio = new Punto();
+		this.setAlto(1);
+		this.setAncho(1);
+	};
 
-	Rectangulo(Punto p, int al, int an) {
-		puntoDeInicio = p;
-		setAlto(al);
-		setAncho(an);
+	public Rectangulo(Punto p, int al, int an) {
+		this.puntoDeInicio = p;
+		this.setAlto(al);
+		this.setAncho(an);
 	}
 
-	private void setAlto(int al) {
+	protected void setAlto(int al) {
 		alto = al;
 	}
 
-	private void setAncho(int an) {
+	protected void setAncho(int an) {
 		ancho = an;
 	}
 
